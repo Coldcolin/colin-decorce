@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colin Decorce — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./frames/frame_000000.webp">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="animation-container">
+    <canvas id="scroll-canvas"></canvas>
+  </div>
+  <div class="overlay-gradient"></div>
+
+  <main class="content-wrapper">
+    <header class="navbar">
+      <a class="logo" href="#">Colin Decorce</a>
+      <nav class="nav-links" id="main-nav">
+        <div class="nav-indicator"></div>
+        <a class="nav-item active" href="#about">About</a>
+        <a class="nav-item" href="#projects">Projects</a>
+        <a class="nav-item" href="#services">Services</a>
+        <a class="nav-item" href="#testimonials">Values</a>
+        <a class="nav-item" href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta btn btn-primary" href="#contact">Get in Touch</a>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <section class="hero">
+      <p class="hero-top-label">Hi, I am</p>
+      <h1 class="hero-title">Colin <span>Decorce</span></h1>
+      <div class="hero-content">
+        <div class="hero-left">
+          <h2>Senior software engineer shipping production systems across web, APIs, and mobile.</h2>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get in Touch <span class="arrow">↗</span></a>
+            <a class="btn btn-ghost" href="#projects">View Work</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="stats-card">
+            <p class="stats-card-value">5+</p>
+            <p class="stats-card-label">Years building production systems</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats-section">
+      <div class="stat-box">
+        <p class="stat-val">5+</p>
+        <p class="stat-label">Years Experience</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-val">4</p>
+        <p class="stat-label">Industries</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-val">3</p>
+        <p class="stat-label">Product Surfaces</p>
+      </div>
+      <div class="stat-box">
+        <p class="stat-val">3</p>
+        <p class="stat-label">Certificates</p>
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <div class="about-label">
+        <p class="eyebrow">✦ About Me</p>
+      </div>
+      <div class="about-text">
+        <p>Five-plus years building production systems across capital-markets registry, fintech, FMCG commerce, and logistics. I also lead the engineering programme at The Curve Africa.</p>
+        <div class="about-actions">
+          <a class="btn btn-primary" href="#contact">Get in Touch <span class="arrow">↗</span></a>
+          <a class="btn btn-ghost" href="#projects">See Selected Work</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos-strip">
+      <p class="eyebrow">✦ Tools I Use</p>
+      <p class="logos-row">TypeScript · React · Next.js · Node.js · .NET · Laravel · Kotlin · React Native · MongoDB · PostgreSQL</p>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="projects-header">
+        <p class="eyebrow accent">✦ Selected Work</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="case-index">
+        <article class="case">
+          <div class="case-summary">
+            <p class="case-domain">Logistics</p>
+            <h3 id="case-dreamworks-title">DreamWorks Logistics ERP</h3>
+            <p class="case-proof">Inventory and courier access that held through three stack changes.</p>
+            <p class="case-stack">TypeScript · Node.js · Next.js</p>
+            <p class="case-action" aria-hidden="true">Read the case</p>
+            <button type="button" class="case-toggle" aria-expanded="false" aria-controls="case-dreamworks" aria-label="Read the case: DreamWorks Logistics ERP"></button>
+          </div>
+          <div class="case-panel" id="case-dreamworks" role="region" aria-labelledby="case-dreamworks-title" aria-hidden="true" inert>
+            <div class="case-panel-inner">
+              <div class="case-details">
+                <div>
+                  <h4>What shipped</h4>
+                  <p>Inventory, courier, and role-based access.</p>
+                </div>
+                <div>
+                  <h4>The hard part</h4>
+                  <p>The architecture held through three stack pivots, and a text-to-SQL agent queries through a read-only database user.</p>
+                </div>
+                <div>
+                  <h4>How it was built</h4>
+                  <p>TypeScript · Node.js · Next.js</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case-summary">
+            <p class="case-domain">Commerce</p>
+            <h3 id="case-afiari-title">Afiari Commerce and POS</h3>
+            <p class="case-proof">Web checkout, then a terminal that reconciles when the network drops.</p>
+            <p class="case-stack">React · Kotlin · Interswitch</p>
+            <p class="case-action" aria-hidden="true">Read the case</p>
+            <button type="button" class="case-toggle" aria-expanded="false" aria-controls="case-afiari" aria-label="Read the case: Afiari Commerce and POS"></button>
+          </div>
+          <div class="case-panel" id="case-afiari" role="region" aria-labelledby="case-afiari-title" aria-hidden="true" inert>
+            <div class="case-panel-inner">
+              <div class="case-details">
+                <div>
+                  <h4>What shipped</h4>
+                  <p>Cart and checkout in React and TypeScript, then a Kotlin POS. A report agent that answers questions about the commerce data and downloads Excel, PDF, or CSV.</p>
+                </div>
+                <div>
+                  <h4>The hard part</h4>
+                  <p>Interswitch payments, including sales that reconcile offline. The report service answers only after the caller is signed in.</p>
+                </div>
+                <div>
+                  <h4>How it was built</h4>
+                  <p>React · Kotlin · Interswitch · Node.js</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case-summary">
+            <p class="case-domain">Capital markets</p>
+            <h3 id="case-registrars-title">First Registrars Platforms</h3>
+            <p class="case-proof">Shareholder portals, staff appraisals, and a requisition desk that has to be approved.</p>
+            <p class="case-stack">Next.js · Node.js · Laravel</p>
+            <p class="case-action" aria-hidden="true">Read the case</p>
+            <button type="button" class="case-toggle" aria-expanded="false" aria-controls="case-registrars" aria-label="Read the case: First Registrars Platforms"></button>
+          </div>
+          <div class="case-panel" id="case-registrars" role="region" aria-labelledby="case-registrars-title" aria-hidden="true" inert>
+            <div class="case-panel-inner">
+              <div class="case-details">
+                <div>
+                  <h4>What shipped</h4>
+                  <p>Shareholder portals in Next.js. An appraisal app for periods, workflows, attendance, and reports. A requisition portal for consumables, purchase orders, and returns.</p>
+                </div>
+                <div>
+                  <h4>The hard part</h4>
+                  <p>Requisitions go through approval, documents are stored in Azure and read with OCR, and empty stock is chased by email. Attendance still checks people in with a photo and a location.</p>
+                </div>
+                <div>
+                  <h4>How it was built</h4>
+                  <p>Next.js · React · Node.js · MongoDB · Laravel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case-summary">
+            <p class="case-domain">Community</p>
+            <h3 id="case-marathon-title">Ajegunle City Youth Marathon</h3>
+            <p class="case-proof">A public race site, with content and registrations kept in their own services.</p>
+            <p class="case-stack">React · Express · MongoDB</p>
+            <p class="case-action" aria-hidden="true">Read the case</p>
+            <button type="button" class="case-toggle" aria-expanded="false" aria-controls="case-marathon" aria-label="Read the case: Ajegunle City Youth Marathon"></button>
+          </div>
+          <div class="case-panel" id="case-marathon" role="region" aria-labelledby="case-marathon-title" aria-hidden="true" inert>
+            <div class="case-panel-inner">
+              <div class="case-details">
+                <div>
+                  <h4>What shipped</h4>
+                  <p>The public site for registration, results, gallery, blog, donations, and training notes, plus an admin CMS and a registration API.</p>
+                </div>
+                <div>
+                  <h4>The hard part</h4>
+                  <p>A blank CMS field falls back to the copy shipped with the site, so an empty database cannot wipe a live page. Race sign-ups and Paystack confirmations live on their own API, and the registrant list stays behind the admin login.</p>
+                </div>
+                <div>
+                  <h4>How it was built</h4>
+                  <p>React · Vite · Express · MongoDB · Paystack</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case-summary">
+            <p class="case-domain">Community</p>
+            <h3 id="case-tsan-title">TSAN Membership</h3>
+            <p class="case-proof">Signup, roster, and ID cards for The Scout Association of Nigeria.</p>
+            <p class="case-stack">React · TypeScript · Vite</p>
+            <p class="case-action" aria-hidden="true">Read the case</p>
+            <button type="button" class="case-toggle" aria-expanded="false" aria-controls="case-tsan" aria-label="Read the case: TSAN Membership"></button>
+          </div>
+          <div class="case-panel" id="case-tsan" role="region" aria-labelledby="case-tsan-title" aria-hidden="true" inert>
+            <div class="case-panel-inner">
+              <div class="case-details">
+                <div>
+                  <h4>What shipped</h4>
+                  <p>Sections from Cubs through Rovers and adult volunteers, organised by state council, division, district, and troop. Roster, events, logbook, achievements, and ID cards. A QR page opens a scout profile.</p>
+                </div>
+                <div>
+                  <h4>The hard part</h4>
+                  <p>A new sign-in on the same browser logs the other tabs out, so two people cannot stay signed in at once.</p>
+                </div>
+                <div>
+                  <h4>How it was built</h4>
+                  <p>React · TypeScript · Vite</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="case">
+          <div class="case-summary">
+            <p class="case-domain">Industry</p>
+            <h3 id="case-rayjay-title">Rayjay</h3>
+            <p class="case-proof">A service site for marine, oil and gas, construction, and lifting work.</p>
+            <p class="case-stack">React · TypeScript</p>
+            <p class="case-action" aria-hidden="true">Read the case</p>
+            <button type="button" class="case-toggle" aria-expanded="false" aria-controls="case-rayjay" aria-label="Read the case: Rayjay"></button>
+          </div>
+          <div class="case-panel" id="case-rayjay" role="region" aria-labelledby="case-rayjay-title" aria-hidden="true" inert>
+            <div class="case-panel-inner">
+              <div class="case-details">
+                <div>
+                  <h4>What shipped</h4>
+                  <p>A public catalog of inspection, training, lifting, and marine services.</p>
+                </div>
+                <div>
+                  <h4>The hard part</h4>
+                  <p>One site has to carry that catalog without turning every service into its own page type.</p>
+                </div>
+                <div>
+                  <h4>How it was built</h4>
+                  <p>React · TypeScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="also-shipped">
+          <h3>Also shipped</h3>
+          <p>AGM accreditation with single-use QR tokens, ONEVOTE, and an Android finance tracker that reads bank SMS alerts.</p>
+        </div>
+      </div>
+      <p class="projects-footer">Selected from registrar, commerce, logistics, industry, and community systems.</p>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="section-header">
+        <p class="eyebrow accent">✦ What I Do</p>
+        <h2>Services</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Full-Stack Product Engineering</h3>
+          <p>React and Next.js products backed by Node.js, .NET, and Laravel, from the API contract through to the screen.</p>
+        </article>
+        <article class="service-card">
+          <h3>Backend Systems and Integrations</h3>
+          <p>APIs, role-based access, maker-checker workflows, payments, and data models built to stay auditable.</p>
+        </article>
+        <article class="service-card">
+          <h3>Mobile Products and Mentoring</h3>
+          <p>React Native and Kotlin POS clients, and the engineering programme at The Curve Africa. Graduates now work at Kora, Fincra, ShutterScore, Irukka, and Afiari.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-header">
+        <p class="eyebrow accent">✦ How I Work</p>
+        <h2>Core Values</h2>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <p>I take responsibility for the result, not only the task I was handed.</p>
+          <div class="client-info"><strong>Ownership</strong></div>
+        </article>
+        <article class="testimonial-card">
+          <p>I tell the truth about the work, including the risk, and I do not skip the control that makes a system trustworthy.</p>
+          <div class="client-info"><strong>Integrity</strong></div>
+        </article>
+        <article class="testimonial-card">
+          <p>I share context early and leave the work in a state someone else can continue.</p>
+          <div class="client-info"><strong>Collaboration</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <p class="eyebrow accent">✦ Let’s Talk</p>
+        <h2>Contact</h2>
+        <p class="eyebrow" style="margin-top: 1rem; line-height: 1.6;">
+          <a href="mailto:decorcecolin@gmail.com">decorcecolin@gmail.com</a>
+          · <a href="tel:+2348165883204">+234 816 588 3204</a>
+          · Lagos — open to remote
+        </p>
+      </div>
+      <div class="contact-content">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="contact-form">
+          <input type="hidden" name="access_key" value="f4b10fd9-e5d6-4346-858f-eafb3f1702b6">
+          <input type="hidden" name="subject"    value="New Portfolio Contact Message">
+          <input type="hidden" name="from_name"  value="Portfolio Website">
+          <input type="text"     name="name"    id="name"    placeholder="Your Name"    required>
+          <input type="email"    name="email"   id="email"   placeholder="Your Email"   required>
+          <textarea              name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" id="submit-btn" class="btn btn-primary">Send Message <span class="arrow">↗</span></button>
+          <div id="form-result" style="display:none;margin-top:1rem;font-size:0.9rem;text-align:center;"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <p class="logo">Colin Decorce</p>
+          <p class="footer-role">Senior Software Engineer</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#testimonials">Values</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/colin-decorce" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/Coldcolin" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Colin Decorce. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
